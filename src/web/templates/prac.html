@@ -216,6 +216,7 @@
 		            	//console.log(re);
 
 		                var searchList = JSON.parse(response);
+		                //console.log(searchList[0]);
 
 		                //console.log(searchList.length);
 
@@ -226,6 +227,7 @@
 		                }
 
 		                else{
+		                console.log(searchList['url'].length)
 						for(i = 0 ; i < searchList['url'].length ; i++)
 						{
 
@@ -237,8 +239,11 @@
 								result+="</div>";						
 								result+="<div class=\"col-sm-8\">";		
 
+								console.log(searchList['count'][i])
 								for(j = 0 ; j < searchList['count'][i] ; j++){
-									var num = Number(searchList['start_time'][i][j].slice(3,5))*60+
+									console.log(searchList['start_time'][i][j]);
+									var num = Number(searchList['start_time'][i][j].slice(0,2))*3600+
+											  Number(searchList['start_time'][i][j].slice(3,5))*60+
 											  Number(searchList['start_time'][i][j].slice(6,8));
 									result+="<div class=\"col-sm-2\">";
 

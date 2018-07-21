@@ -12,7 +12,7 @@ from konlpy.utils import pprint
 
 import sqlite3
 
-con = sqlite3.connect('data/youtubing_dev.db')
+con = sqlite3.connect('data/youtubing.db')
 
 #파일 불러오기
 sql_stc = "SELECT \

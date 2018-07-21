@@ -272,7 +272,10 @@ for i, url in enumerate(dataset['url']):
     hit_soup = soup.select('span.yt-view-count-renderer')
     
     date.append(date_soup[0].find(text=True).replace('게시일: ',''))
-    explain.append(explain_soup[0].find(text=True).split('\n\n')[0])
+    if explain_soup[0].find(text=True) is None:
+        explain.append('')
+    else:
+        explain.append(explain_soup[0].find(text=True).split('\n\n')[0])
     like.append(num_parser(str(like_soup[0].findAll(text=True)[-1])))
     unlike.append(num_parser(str(unlike_soup[1].findAll(text=True)[-1])))
     subscribe.append(num_parser(str(subscribe_soup[0].find(text=True))))
