@@ -1,0 +1,6 @@
+- softmax / cross-entropy 미분
+	- https://ratsgo.github.io/deep%20learning/2017/10/02/softmax/
+- item2vec
+	- https://brunch.co.kr/@goodvc78/16
+- dependency parser
+	- https://ai.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html
