@@ -1,6 +1,6 @@
 # Video Search
 
-### 날 따라 해봐요 (180713)
+### 안녕
 1. `python src/crawling/get_subtitle.py keyword`
 	keyword에는 검색할 단어(혹은 문장)가 들어가야 함!
 2. `python src/preprocessing/cleansing_subtitle.py`
