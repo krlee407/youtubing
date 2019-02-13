@@ -8,3 +8,4 @@ notebook/*
 *.txt
 *.exe
 *.log
+*.pyc
