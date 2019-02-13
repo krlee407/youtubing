@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import konlpy
 from konlpy.tag import *
 from konlpy.utils import pprint
